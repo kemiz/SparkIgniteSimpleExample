@@ -26,7 +26,7 @@ occurrence of each character in the most popular words.
 
 To run from a master node in a Spark cluster:
 
-`bin/spark-submit --class com.gridgain.examples.sparkwordcount.SparkWordCount --master local --jars /Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/gridgain-core-7.5.11.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-core-1.5.11.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/optional/ignite-spark_2.10/ignite-spark_2.10-1.5.11.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/cache-api-1.0.0.jar, sparkwordcount-0.0.1-SNAPSHOT.jar`
+`bin/spark-submit --class com.gridgain.examples.sparkwordcount.SparkWordCount --master local --jars <IGNITE_HOME>/libs/ignite-core-1.5.11.jar,<IGNITE_HOME>/libs/optional/ignite-spark_2.10/ignite-spark_2.10-1.5.11.jar,<IGNITE_HOME>/libs/cache-api-1.0.0.jar, spark-ignite-example-1.0.jar`
 
 This will run the application in a single local process.  If the cluster is running a Spark standalone
 cluster manager, you can replace "--master local" with "--master spark://`<master host>`:`<master port>`".
@@ -41,7 +41,8 @@ The first RDD is create from a file and the second is an IgniteRDD.
 
 To run from a master node in a Spark cluster:
 
-`bin/spark-submit --class com.gridgain.examples.sparkwordcount.SparkWordCount --master local --jars /Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/gridgain-core-7.5.11.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-core-1.5.11.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/optional/ignite-spark_2.10/ignite-spark_2.10-1.5.11.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/cache-api-1.0.0.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-spring/ignite-spring-1.5.11.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-spring/commons-logging-1.1.1.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-spring/spring-aop-4.1.0.RELEASE.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-spring/spring-beans-4.1.0.RELEASE.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-spring/spring-context-4.1.0.RELEASE.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-spring/spring-core-4.1.0.RELEASE.jar,/Users/kemi/Documents/dev/gridgain-enterprise-fabric-7.5.11/libs/ignite-spring/spring-expression-4.1.0.RELEASE.jar sparkwordcount-0.0.1-SNAPSHOT.jar`
+`bin/spark-submit --class com.gridgain.examples.sparkwordcount.SparkWordCount --master local --jars <IGNITE_HOME>/libs/ignite-core-1.5.11.jar,<IGNITE_HOME>/libs/optional/ignite-spark_2.10/ignite-spark_2.10-1.5.11.jar,<IGNITE_HOME>/libs/cache-api-1.0.0.jar,<IGNITE_HOME>/libs/ignite-spring/ignite-spring-1.5.11.jar,<IGNITE_HOME>/libs/ignite-spring/commons-logging-1.1.1.jar,<IGNITE_HOME>/libs/ignite-spring/spring-aop-4.1.0.RELEASE.jar,<IGNITE_HOME>/libs/ignite-spring/spring-beans-4.1.0.RELEASE.jar,<IGNITE_HOME>/libs/ignite-spring/spring-context-4.1.0.RELEASE.jar,<IGNITE_HOME>/libs/ignite-spring/spring-core-4.1.0.RELEASE.jar,<IGNITE_HOME>/libs/ignite-spring/spring-expression-4.1.0.RELEASE.jar spark-ignite-example-1.0.jar`
+
 This will run the application in a single local process.  If the cluster is running a Spark standalone
 cluster manager, you can replace "--master local" with "--master spark://`<master host>`:`<master port>`".
 
