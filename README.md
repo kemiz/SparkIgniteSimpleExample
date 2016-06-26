@@ -2,10 +2,9 @@ Simple Spark & Ignite Integration
 ==============
 
 Two simple Spark applications that demonstrate integration with Apache Ignite.
+___
 
 <h3> Prerequisites </h3>
-==========
-
 1. Install Apache Ignite
     - https://apacheignite.readme.io/docs/getting-started#installation
 2. Install Apache Spark
@@ -18,9 +17,9 @@ Two simple Spark applications that demonstrate integration with Apache Ignite.
 5. Build the application:
     - `mvn clean package`
 
-<h3> Spark Word Count using IgniteRDD </h3>
-==========
+___
 
+<h3> Spark Word Count using IgniteRDD </h3>
 The first example counts the occurrence of each word in a corpus and then counts the
 occurrence of each character in the most popular words.
 
@@ -33,8 +32,9 @@ cluster manager, you can replace "--master local" with "--master spark://`<maste
 
 If the cluster is running YARN, you can replace "--master local" with "--master yarn".
 
+___
+
 <h3> Spark SQL Join using IgniteRDD </h3>
-==========
 
 This example demonstrates joining 2 RDDs via the use of DataFrames. 
 The first RDD is create from a file and the second is an IgniteRDD.
