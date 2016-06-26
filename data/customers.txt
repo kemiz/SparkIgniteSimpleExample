@@ -1,0 +1,7 @@
+100, John Smith, Austin, TX, 78727, 0
+200, Joe Johnson, Dallas, TX, 75201, 1
+300, Bob Jones, Houston, TX, 77028, 4
+400, Andy Davis, San Antonio, TX, 78227, 3
+500, James Williams, Austin, TX, 78727, 1
+600, Barry Franker, Austin, TX, 78727, 2
+700, Jon Cane, San Fransisco, CA, 35347, 2
