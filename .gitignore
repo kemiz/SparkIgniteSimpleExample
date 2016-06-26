@@ -1,6 +1,5 @@
 *.iml
 .idea/
 target/
-SparkIgniteSimpleExample.iml
-SparkIgniteSimpleExample.ipr
-SparkIgniteSimpleExample.iws
+*.ipr
+*.iws
