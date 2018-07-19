@@ -5,15 +5,20 @@ Two simple Spark applications that demonstrate integration with Apache Ignite.
 ___
 
 <h3> Prerequisites </h3>
+
 1. Install Apache Ignite
     - https://apacheignite.readme.io/docs/getting-started#installation
+
 2. Install Apache Spark
     - http://spark.apache.org/docs/latest/
+    
 3. Start Ignite
     - `ignite.sh`
+    
 4. Start Spark cluster
     - `start-master.sh`
     - `start-slave.sh <master host>:<master port>`
+
 5. Build the application:
     - `mvn clean package`
 
